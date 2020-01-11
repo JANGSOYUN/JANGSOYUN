@@ -92,7 +92,11 @@ public class MemberController {
 		}
 	}
 	
-	@RequestMapping("delete")
+	@RequestMapping(value="delete", method=RequestMethod.GET)
+	public void delete() {
+	}
+	
+	@RequestMapping(value="delete", method=RequestMethod.POST)
 	public String delete(String userpw, HttpSession session, HttpServletResponse response) {
 		MemberVO userd = (MemberVO)session.getAttribute("login");
 		if(userpw.equals(userd.getUserpw())){

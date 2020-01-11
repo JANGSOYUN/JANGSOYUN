@@ -28,7 +28,7 @@
 <input type="hidden" name="userid" value="${sessionScope.login.userid }">
 <input type="hidden" name="username" value="${sessionScope.login.username }">
 <input type="submit" value="정보 수정">
-<input type="button" value="회원탈퇴" onclick="location.replace('delete?userpw=${sessionScope.login.userpw}')">
+<input type="button" value="회원탈퇴" onclick="location.replace('delete')">
 </form>
 </body>
 </html>
