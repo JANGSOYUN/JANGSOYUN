@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Maper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="memberDAO">
+	<insert id="join" parameterType="member">
+		insert into membertest (userid, userpw, username) 
+		values (#{userid}, #{userpw}, #{username})
+	</insert>
+	
+	<select id="login" parameterType="member" resultType="member">
+		select * from membertest where userid = #{userid} and userpw = #{userpw} 
+	</select>
+	
+	<update id="update" parameterType="member">
+		update membertest set userpw = #{userpw}, username = #{username}
+		where userid = #{userid}
+	</update>
+	
+	<delete id="delete">
+		delete from membertest where userid = #{userid} and userpw = #{userpw}
+	</delete>
+</mapper>
