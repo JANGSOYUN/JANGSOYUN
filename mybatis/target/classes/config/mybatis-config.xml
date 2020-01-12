@@ -11,5 +11,6 @@
 	
 	<typeAliases>
 		<typeAlias type="com.itbank.dao.MemberVO" alias="member"/>
+		<typeAlias type="com.itbank.dao.EBookVO" alias="ebook"/>
 	</typeAliases>
 </configuration>

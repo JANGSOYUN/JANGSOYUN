@@ -4,8 +4,6 @@ public class EBookVO {
 	private int bnum;
 	private String bpicture, btitle, bfield, bwriter, btrans, bpublisher, bdate, bprice, bintro;
 	
-	// EBookVO
-	
 	public int getBnum() {
 		return bnum;
 	}
