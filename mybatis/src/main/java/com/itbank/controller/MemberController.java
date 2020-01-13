@@ -52,7 +52,7 @@ public class MemberController {
 			mv.setViewName("redirect:/");
 			session.setAttribute("login", r);
 		}else {
-			model.addAttribute("no", "ë¡œê·¸ì¸ ì‹¤íŒ¨");
+			model.addAttribute("no", "·Î±×ÀÎ ½ÇÆĞ");
 		}
 		if(idsave != null) {
 			Cookie save = new Cookie("idsave", r.getUserid());

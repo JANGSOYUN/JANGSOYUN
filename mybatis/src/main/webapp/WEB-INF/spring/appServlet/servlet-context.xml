@@ -25,12 +25,7 @@
 	
 	<interceptors>
 		<interceptor>
-		<!-- * = 현 계층에서 // ** = 하위 계층 모두 다 -->
-			<mapping path="/showInfo" />
-			<mapping path="/boa*" />		<!-- board1, board2 등록 -->
-			<mapping path="/logi*/*" />		<!-- board3, board4 등록 -->
-			<exclude-mapping path="/log*/*3"/>		<!-- board3 제외 -->
-			<!-- URL 경로 -->
+			<mapping path="/logi*" />
 			<beans:bean class="com.itbank.interceptor.LoginInterceptorTMP" />
 		</interceptor>
 	</interceptors>

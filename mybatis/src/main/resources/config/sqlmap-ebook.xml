@@ -20,6 +20,7 @@
 	
 	
 	
+	
 	<select id="selectByTitle" parameterType="ebook">
 		select * from EBook where btitle = #{btitle}
 	</select>
