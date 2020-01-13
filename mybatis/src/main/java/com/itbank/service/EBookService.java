@@ -13,4 +13,17 @@ public class EBookService {
 	public int add(EBookVO vo) {
 		return dao.add(vo);
 	}
+	
+	public int revise(EBookVO vo) {
+		return dao.revise(vo);
+	}
+	
+	public int remove(EBookVO vo) {
+		return dao.remove(vo);
+	}
+	
+	public int selectByTitle(EBookVO vo) {
+		return dao.selectByTitle(vo);
+	}
+	
 }

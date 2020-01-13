@@ -11,4 +11,18 @@ public class EBookDAO {
 	public int add(EBookVO vo) {
 		return sql.insert("add", vo);
 	}
+	
+	public int revise(EBookVO vo) {
+		return sql.update("revise", vo);
+	}
+	
+	public int remove(EBookVO vo) {
+		return sql.delete("remove", vo);
+	}
+	
+	public int selectByTitle(EBookVO vo) {
+		return sql.selectOne("selectByTitle", vo);
+	}
+	
+	
 }
